@@ -1,5 +1,12 @@
 var mongoose = require('mongoose');
+// const userRouter = require('./routes/usersRoute');
+// const productRouter = require('./routes/productRoute');
+const alertRouter = require('./routes/alertRoute');
+const vendorRouter = require('./routes/vendorRoute');
+const medicineRouter = require('./routes/medicineRoute');
+const billRouter = require('./routes/billRoute');
 var app = require('./config/appConfig');
+// require('./config/passport');
 require('dotenv').config();
 
 const port = process.env.PORT || 5000;
@@ -24,6 +31,12 @@ app.get('/', ( req, res)=>{
  res.send("Done");
 
 });
+
+// app.use('/user', userRouter);
+app.use('/admin/vendor', vendorRouter);
+app.use('/admin/alerts', alertRouter);
+app.use('/admin/medicine', medicineRouter);
+app.use('/admin/bills', billRouter);
 
 
 app.listen(port, ()=>console.log(`Server up and Running port: ${port}`));
