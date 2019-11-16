@@ -1,0 +1,185 @@
+.bill-box {
+  position: relative;
+  float: right;
+  height: 400px;
+  min-width: 700px;
+  min-height: 600px;
+  height: auto;
+  margin: 100px 10%;
+  margin-left: 2%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 0px;
+}
+
+@media only screen and (max-width: 1142px) {
+  .bill-box {
+    max-width: 600px;
+    margin: 150px 20%;
+  }
+}
+
+.header-row {
+  background-color: #f5f5f5;
+  padding: 5px;
+  width: 100%;
+}
+
+.header-text {
+  font-size: 20px;
+  color: #686868;
+  margin-left: 5px;
+}
+
+.billformDiv {
+  max-width: 100%;
+  border: 1px solid blue;
+}
+
+.customerDetailDiv {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.custDetailTable {
+  border: 1px solid black;
+  width: 100%;
+  height: 100px;
+  border-collapse: collapse;
+}
+
+.custDetailRow {
+  border: 1px solid black;
+}
+
+.custDetailHeading {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.custDetailCol {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+  margin-left: 3px;
+}
+
+.custHeadingText {
+  margin-left: 5px;
+}
+
+.custTextInput {
+  width: 95%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.medicineTableDiv {
+  background-color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.medicineTable {
+  border: 1px solid black;
+  width: 100%;
+  height: 100px;
+  border-collapse: collapse;
+}
+
+.addMedTableRow {
+  border: 1px solid black;
+}
+
+.addMedTableCol {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+.addMedTableHeader {
+  border: 1px solid black;
+  font-size: 13px;
+  text-align: left;
+  padding: 5px;
+}
+
+.addMedTableInput {
+  width: 95%;
+  padding: 5px;
+  margin-left: 2.5%;
+}
+
+button.p-button.p-component.p-button-raised.p-button-success.addMedTableButton.p-button-text-icon-left {
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+  min-width: 90%;
+}
+
+.addMedTableDropDown {
+  width: 90px;
+  min-width: 10%;
+}
+
+.addMedTableHeaderText {
+  padding-left: 2px;
+}
+
+.deleteAllMedsDiv {
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.deleteAllMedsButton {
+  margin-top: 10px;
+  padding: 2px;
+}
+
+.billListDiv {
+  background-color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.billListTable {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.billListTableRow {
+  border: 1px solid black;
+}
+
+.billListTableCol {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+  text-align: left;
+  height: 50px;
+}
+
+.billListColText {
+  margin-left: 10px;
+}
+
+button.p-button.p-component.p-button-danger.p-button-icon-only {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.billListTableHeading {
+  border: 1px solid black;
+  text-align: left;
+  height: 50px;
+}
+
+.billListTableHeadingText {
+  padding: 5px;
+  font-size: 15px;
+}
+/*# sourceMappingURL=billbox.css.map */
