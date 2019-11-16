@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 // const userRouter = require('./routes/usersRoute');
-// const productRouter = require('./routes/productRoute'); deleted
+// const productRouter = require('./routes/productRoute');
 const alertRouter = require('./routes/alertRoute');
 const vendorRouter = require('./routes/vendorRoute');
 const medicineRouter = require('./routes/medicineRoute');

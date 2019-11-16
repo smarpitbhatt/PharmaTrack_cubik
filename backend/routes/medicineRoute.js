@@ -3,10 +3,17 @@ const Medicine = require('../models/medicine.model');
 const Alert = require('../models/alert.model');
 const Bill = require('../models/bill.model');
 
-async function fetchAndAdd(item) {
+async function fetchAndAdd(item, res) {
     console.log(item);
     await Medicine.findOne({ name: item.medicine })
         .then(medicine => {
+            if(!medicine) {
+                let newMedicine = new Medicine({...item,name:item.medicine});
+                console.log();
+                return newMedicine.save()
+                    .then(response=> {})
+                    .catch(err=> res.json('err'));
+            }
             console.log(medicine);
             medicine.quantity += Number(item.quantity);
             if (medicine.quantity < 15) {
@@ -17,7 +24,7 @@ async function fetchAndAdd(item) {
                 alert.save();
             }
 
-            medicine.save()
+            return medicine.save()
                 .then()
                 .catch();
         })
@@ -43,7 +50,7 @@ router.post('/add', (req, res) => {
     // })
 
     items.forEach(item => {
-        fetchAndAdd(item);
+        fetchAndAdd(item, res);
     });
     res.json('ok');
 })
