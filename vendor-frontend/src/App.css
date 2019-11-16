@@ -1,22 +1,58 @@
-.App {
-  text-align: center;
+a {
+  text-decoration: underline;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
+.login-btn {
+  display: inline;
+}
+.login-btn:hover {
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-logo {
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  padding-top: -80px;
+  position: relative;
+  top: -20px;
 }
 
-.App-link {
-  color: #09d3ac;
+.quotation {
+  /* margin-top: 70px; */
+  font-size: 30px;
+  margin: 0 auto;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  /* height: 0; */
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ccc;
+  font-size: 3em;
+}
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  /* height: 0; */
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #ccc;
+  font-size: 3em;
+}
+footer {
+  margin-right: 150px;
+  text-align: right;
+  font-size: 1.5em;
+  font-style: italic;
 }
