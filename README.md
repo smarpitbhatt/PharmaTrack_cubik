@@ -1,4 +1,4 @@
-# PharmaTrack_cubik
+# PharmaTrack
 
 A real-time stock management system for pharmacy supplies of a Hospital.
 
