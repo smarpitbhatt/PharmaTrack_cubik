@@ -85,7 +85,6 @@ export default class Vendors extends React.Component {
 				if (res.data === 'failed') {
 					this.onClick2();
 				} else {
-					let quantity = this.state.quantity;
 					// this.setState({ quantity });
 					this.onClick1();
 				}
