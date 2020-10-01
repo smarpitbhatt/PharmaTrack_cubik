@@ -6,16 +6,20 @@ export default function AlertBox(props) {
 
 	useEffect(
 		() => {
-			Axios.get('/admin/alerts')
+			getAlerts();
+		}, []
+	);
+	
+	getAlerts = () => {
+	Axios.get('/admin/alerts')
 				.then(res => {
 					console.log(res.data)
 					changeAlerts(res.data)
 				})
 				.catch(err => {
 					console.log(err)
-				});
-		}, []
-	);
+				});	
+	}
 
 	let deleteAlert = (id) => {
 		Axios.delete('/admin/alerts/' + id)
