@@ -3,10 +3,10 @@
 A real-time stock management system for pharmacy supplies of a Hospital.
 
 ## Technology Stack
- -- ReactJs 
  -- Node.js
  -- React Native
  -- MongoDB
+ -- ReactJs
  
 
 Use the package manager npm to install all the dependencies.
