@@ -1,7 +1,6 @@
 import React from 'react';
 import Axios from './axiosConfig';
 
-// let bills = [];
 
 export default class BillingLogs extends React.Component {
 	constructor(props) {
@@ -18,8 +17,7 @@ export default class BillingLogs extends React.Component {
 
 	getBills = async () => {
 		await Axios.get('/admin/bills')
-			.then(res => {
-				// console.log(res.data);
+			.then(res => {				
 				this.addBillsToArray(res.data);
 				console.log(this.state.bills);
 			})
